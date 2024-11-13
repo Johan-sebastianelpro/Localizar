@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool FC - Página Web Taller Final</title>
+
+    <!-- Icono de la página -->
+    <link rel="icon" href="https://img.icons8.com/?size=512&id=21735&format=png" type="image/x-icon">
+
+    <!-- CSS para diseño -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ff6666;;
+        }
+
+        header {
+            background-color: #c8102e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #003c5d;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #c8102e;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6, h7 {
+            color: green;
+        }
+
+        footer {
+            background-color: #003c5d;
+            color: white;
+            text-align: left;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Cinta deslizante de imágenes */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Animación de texto */
+        .animated-text {
+            font-size: 30px;
+            color: #003c5d;
+            animation: slideIn 3s ease-in-out infinite;
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            50% { transform: translateX(0); }
+            100% { transform: translateX(100%); }
+        }
+    </style>
+
+    <script>
+        // Script para animación de texto
+        function changeText() {
+            document.getElementById("animated-text").innerHTML = "¡Bienvenidos al sitio oficial del Liverpool FC!";
+        }
+
+        // Script para la cinta de imágenes
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 3000); // Cambiar cada 3 segundos
+        }
+        window.onload = showSlides;
+    </script>
+</head>
+<body>
+
+<!-- Cabecera -->
+<header>
+    <h1>Liverpool FC</h1>
+    <p>Bienvenido al sitio liverpool</p>
+</header>
+
+</nav>
+
+<!-- Sección principal -->
+<section>
+    <h2>Bienvenidos al Liverpool FC</h2>
+    <p class="animated-text" id="animated-text">¡LIVERPOOL!</p>
+
+    <h3>Historia del Liverpool FC</h3>
+    <p>El Liverpool Football Club es uno de los clubes más exitosos y prestigiosos de Inglaterra, fundado en 1892..
+	
+	El Liverpool Football Club (pronunciación en inglés: /ˈlɪvərpul ˈfʊtbɔl klʌb/) es un club de fútbol profesional inglés con sede en Liverpool, Inglaterra, que disputa la Premier League, máxima competición futbolística en dicho país. Fue oficialmente registrado como club de fútbol por John Houlding el 6 de junio de 1892, aunque originalmente fue nombrado «Everton F. C. and Athletic Grounds Ltd.» ante la Asociación Inglesa de Fútbol. En 1893 se unió a la Football League.</p>
+
+Es la institución con el mayor número de campeonatos en todo tipo de competencias oficiales entre los clubes del fútbol inglés sumando un total de sesenta y ocho títulos oficiales. Así mismo es el club inglés con la máxima cifra de títulos internacionales,4​ con una Copa Mundial de Clubes de la FIFA, seis Copas de Europa, tres Copas de la UEFA y cuatro Supercopas de la UEFA. A nivel nacional, ha ganado diecinueve títulos de liga,5​ ocho Copas de Inglaterra,6​ diez Copas de la Liga,7​8​ —siendo el equipo que más ha ganado dicha competición— dieciséis Community Shields y una Supercopa de la Liga.</p>
+
+Si bien ganó su primer título de liga en 1901, fue durante la décadas de 1970 y 1980 cuando la institución, bajo la conducción técnica primero de Bill Shankly y posteriormente de Bob Paisley, obtuvo siete títulos internacionales y once campeonatos de liga. Fue miembro fundador de la «Premier League» en 1992 y del grupo G-14. Sus colores distintivos históricamente son el rojo —por lo cual reciben el apelativo de «The Reds»—, y en menor medida el blanco. Disputa sus partidos como local en el Estadio de Anfield desde su formación, que posee una capacidad de 50 074 espectadores.</p>
+
+Es considerado uno de los clubes más populares de Inglaterra y del mundo; también es el noveno con mayor cantidad de ingresos al 2014, con un lucro anual de €306 millones.9​ Fue calificado por la revista Forbes como el octavo club de fútbol más valuado en el mundo en 2015, con una suma total de $982 millones.10​ Sus principales rivalidades son con el Everton, con quien disputa el derbi de Merseyside, y con el Manchester United Football Club, cuyos partidos entre sí son referidos como el derbi del Noroeste de Inglaterra.</p>
+
+Junto con Manchester United, Chelsea y Manchester City, son los únicos equipos del Reino Unido que han ganado el máximo campeonato de clubes de fútbol a nivel mundial, cuando el 21 de diciembre de 2019 se consagró campeón de la Copa Mundial de Clubes de la FIFA disputada en Catar, al derrotar al representante de la Copa Libertadores de América, el Flamengo de Brasil, por 1-0 en el Estadio Internacional Khalifa.11​
+
+Dos de las mayores tragedias del fútbol tuvieron involucramiento de sus aficionados. La primera fue la Tragedia de Heysel en 1985, cuando 39 personas —la mayoría aficionados de Juventus— fallecieron por culpa de los incidentes causados por los hooligans ingleses en el Estadio Heysel, y en 1989 en Sheffield, cuando 96 personas perecieron como resultado de una mala organización en los accesos a las tribunas del estadio Hillsborough. Su himno es «You'll Never Walk Alone».</p>
+
+    <hr>
+
+    <!-- Tabla de jugadores -->
+    <h3>Jugadores Destacados</h3>
+    <table class="table">
+        <tr>
+            <th>Jugador</th>
+            <th>Posición</th>
+            <th>Años en el Club</th>
+        </tr>
+        <tr>
+            <td>Steven Gerrard</td>
+            <td>Centrocampista</td>
+            <td>1998-2015</td>
+        </tr>
+        <tr>
+            <td>Kenny Dalglish</td>
+            <td>Delantero</td>
+            <td>1977-1990</td>
+        </tr>
+        <tr>
+            <td>Mohamed Salah</td>
+            <td>Delantero</td>
+            <td>2017-Presente</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Cinta de imágenes -->
+    <h3>Galería de Imágenes</h3>
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="https://www.palco23.com/files//2020/19_redaccion/competiciones/futbol/premier%20league/liverpool/anfield-estadio-liverpool-728.jpg" alt="Anfield Stadium">
+        </div>
+        <div class="slide">
+            <img src="https://e7.pngegg.com/pngimages/110/661/png-clipart-liverpool-f-c-reserves-and-academy-liverpool-l-f-c-anfield-english-football-league-melbourne-city-fc-food-label-thumbnail.png" alt="Liverpool FC Logo">
+			        <div class="slide">
+            <img src="https://backend.liverpoolfc.com/sites/default/files/styles/xl/public/acquiadam/2022-09/third-kit-press-release-cover-05092022.jpg?itok=kmG30AFq" alt="Manchester United kit">
+        </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Video de YouTube -->
+    <h3>Video 
+	El liverpool de KLOPP</h3>
+    <iframe width="560" height="315" src="C:\Users\johan sebastian\Downloads\La PREMIER 👑 del LIVERPOOL 🔴 de KLOPP 2⃣0⃣1⃣9⃣ _ 2⃣0⃣2⃣0⃣.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <hr>
+
+    <!-- Mapa del Estadio -->
+    <h3>Ubicación de Anfield</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <hr>
+
+    <!-- Enlace a Noticias -->
+    <h3>Últimas Noticias</h3>
+    <a href="https://www.liverpoolfc.com/news" target="_blank">Ver Noticias</a>
+	<hr>
+</section>
+
+
+   
+    <div>
+        <a href="https://www.facebook.com/liverpoolfc" target="_blank">Facebook</a>  
+        <a href="https://twitter.com/liverpoolfc" target="_blank">Twitter</a> 
+        <a href="https://www.instagram.com/liverpoolfc" target="_blank">Instagram</a>
+    </div>
+
+
+</body>
+</html>
+
+

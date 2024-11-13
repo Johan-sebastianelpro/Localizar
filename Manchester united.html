@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester United - Página Web Taller Final</title>
+
+    <!-- Icono de la página -->
+    <link rel="icon" href="https://img.icons8.com/?size=512&id=21736&format=png" type="image/x-icon">
+
+    <!-- CSS para diseño -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2980b9;;
+        }
+
+        header {
+            background-color: #da291c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #000;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #da291c;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6, h7 {
+            color: yellow;
+        }
+
+        footer {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Cinta deslizante de imágenes */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Animación de texto */
+        .animated-text {
+            font-size: 30px;
+            color: #da291c;
+            animation: slideIn 3s ease-in-out infinite;
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            50% { transform: translateX(0); }
+            100% { transform: translateX(100%); }
+        }
+    </style>
+
+    <script>
+        // Script para animación de texto
+        function changeText() {
+            document.getElementById("animated-text").innerHTML = "¡Bienvenidos al sitio oficial del Manchester United!";
+        }
+
+        // Script para la cinta de imágenes
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 3000); // Cambiar cada 3 segundos
+        }
+        window.onload = showSlides;
+    </script>
+</head>
+<body>
+
+<!-- Cabecera -->
+<header>
+    <h1>Manchester United FC</h1>
+    <p>Bienvenido al sitio de Manchester United</p>
+</header>
+
+
+</nav>
+
+<!-- Sección principal -->
+<section>
+    <h2>Bienvenidos al Manchester United FC</h2>
+    <p class="animated-text" id="animated-text">¡Manchester United!</p>
+
+    <h3>Historia del Manchester United</h3>
+    <p>El Manchester United Football Club, conocido como Manchester United o simplemente United, es un club de fútbol profesional inglés de la ciudad de Mánchester, Inglaterra, que compite en la Premier League. Disputa sus partidos como local en el estadio Old Trafford, desde 1910.
+
+Fue fundado el 17 de enero de 1878 bajo el nombre de Newton Heath LYR Football Club4​ y se incorporó a la First Division en 1892.4​5​ Después de estar cerca de la bancarrota en 1902, J. H. Davies tomó las riendas del club y cambió su nombre por el actual.6​ Durante la Segunda Guerra Mundial su estadio fue bombardeado y durante un tiempo estuvieron jugando en Maine Road.7​8​ El equipo gozó de un éxito sin precedentes tras nombrar a Matt Busby como entrenador del equipo y ganar la liga en 1956 y 1957.9​ Pese a que en 1958 ocurrió el desastre aéreo de Múnich, en el que ocho jugadores del equipo perdieron la vida junto con el entrenador Tom Curry,10​11​ el conjunto salió adelante con Bobby Charlton como sobreviviente y otros grandes como Denis Law y George Best, conocidos como la grandísima trinidad, en su época como jugadores del Manchester United ganaron la Champions League en el año 1968 contra el Benfica. Entre los años 1990 y 2013, Sir Alex Ferguson dirigió al equipo a la obtención de ocho campeonatos ligueros y en 1999 se convirtió en el primer equipo inglés en ganar la Champions League, la Premier League y la FA Cup en la misma temporada —el «triplete» del club—.12​</p>
+
+A nivel nacional Manchester United ha obtenido un récord de 20 títulos de liga,13​ 13 FA Cup,14​ 6 Copas de la Liga15​16​ y 21 Supercopas de Inglaterra. A lo anterior se suman 3 Copas de Europa, una Supercopa de Europa, una Recopa de Europa, una Copa de la UEFA, una Copa Intercontinental y una Copa Mundial de Clubes de la FIFA,17​ lo que lo convierte junto a Liverpool uno de los clubes ingleses más exitosos.18​
+
+Junto con Liverpool, Chelsea y Manchester City, son los únicos equipos del Reino Unido que pertenecen al grupo de los únicos 31 clubes en el mundo que han ganado el máximo campeonato de clubes de fútbol a nivel mundial,19​ cuando el 30 de noviembre de 1999 conquistó la Copa Intercontinental20​ y el 21 de diciembre de 2008 la Copa Mundial de Clubes,21​ ambas disputadas en Japón, derrotando a los representantes de la Copa Libertadores: Palmeiras y Liga de Quito respectivamente por idéntico marcador, 1-0. Siendo (de los clubes británicos), el primer y máximo ganador de los títulos mundiales de clubes.</p>
+
+Es considerado también como uno de los clubes deportivos más populares del mundo;22​ en 2012 contaba con una base de 659 millones de seguidores en todo el mundo, en su mayoría asiáticos, del Oriente Medio y África, Europa y América.23​24​ Desde 1994 se mantiene como el club con la asistencia más alta en sus partidos de liga, con un promedio de más de 14 mil aficionados por juego.25​ En términos financieros, es uno de los equipos deportivos con mejor valor de mercado en el mundo, siendo el primero en superar los 3000 millones USD en 2013.</p>
+
+    <hr>
+
+    <!-- Tabla de jugadores -->
+    <h3>Jugadores Destacados</h3>
+    <table class="table">
+        <tr>
+            <th>Jugador</th>
+            <th>Posición</th>
+            <th>Años en el Club</th>
+        </tr>
+        <tr>
+            <td>Ryan Giggs</td>
+            <td>Centrocampista</td>
+            <td>1991-2014</td>
+        </tr>
+        <tr>
+            <td>Eric Cantona</td>
+            <td>Delantero</td>
+            <td>1992-1997</td>
+        </tr>
+        <tr>
+            <td>Wayne Rooney</td>
+            <td>Delantero</td>
+            <td>2004-2017</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Cinta de imágenes -->
+    <h3>Galería de Imágenes</h3>
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="data:image/jpeg;base64,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" alt="Manchester United Estadio">
+        </div>
+        <div class="slide">
+            <img src="https://i.pinimg.com/originals/8e/f5/9d/8ef59dc3c90a3abd56c87a5901709132.jpg" alt="Logo">
+        </div>
+        <div class="slide">
+            <img src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0723%2Fr1201191_1080x608_16%2D9.jpg" alt="Manchester United kit">
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Video de YouTube -->
+    <h3>Video Destacado</h3>
+    <iframe width="560" height="315" src="C:\Users\johan sebastian\Downloads\La ÚLTIMA PREMIER 👑 del MAN. UNITED 👹 2⃣0⃣1⃣2⃣  _ 2⃣0⃣1⃣3⃣.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <hr>
+
+    <!-- Mapa del Old Trafford -->
+    <h3>Ubicación del Old Trafford</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.8132054153454!2d-2.292291485091278!3d53.463031471651476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1f66f4e4327%3A0x3ae5bb0877a44d71!2sOld%20Trafford!5e0!3m2!1ses!2sus!4v1642534518421!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <hr>
+
+    <!-- Enlace a Noticias -->
+    <h3>Últimas Noticias del Manchester United</h3>
+    <p>Consulta las últimas noticias del Manchester United en su sitio oficial:</p>
+    <a href="https://www.pasionfutbol.com/fichajes/Amorim-no-los-quiere-Los-jugadores-que-vendera-el-Manchester-United-20241106-0008.html" target="_blank">Ver Noticias</a>
+	<hr>
+</section>
+
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com/manchesterunited" target="_blank">Facebook</a>
+        <a href="https://twitter.com/ManUtd" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/manchesterunited/" target="_blank">Instagram</a>
+    </div>
+</footer>
+
+</body>
+</html>
